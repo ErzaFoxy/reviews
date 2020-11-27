@@ -43,6 +43,7 @@
     justify-content: center
     align-items: center
     flex-direction: column
+    width: 100%
     &__title
         font-weight: 400
         font-size: 40px
@@ -63,7 +64,7 @@
             img
                 width: 300px
                 height: 300px
-                
+
 
 @media (max-width: 768px)
     .reviews
@@ -86,4 +87,80 @@
             img
                 width: 110px
                 height: 110px
+
+.footer
+    color: #ffffff
+    font-weight: 400
+    font-size: 14px
+    background: #1B1B26
+    width: 100%
+    a
+        color: #ffffff
+        text-decoration: none
+        &:hover
+            text-decoration: underline
+    &-bold
+        font-weight: 700
+        padding-top: 10px
+        font-size: 18px
+        
+
+@media (max-width: 2561px)
+    .footer
+        display: flex
+        min-height: 128px
+        padding: 30px 75px 35px 75px
+        flex-direction: row
+        a
+            display: inline-flex
+            align-items: center
+        &__time
+            display: flex
+            flex-direction: column
+            min-width: 160px
+            margin-right: 55px
+        &__call
+            margin-right: auto
+            display: flex
+            flex-direction: column
+            min-width: 180px
+        &__link
+            min-width: 350px
+            a
+                padding: 7.5px 25px
+        &__social
+            display: flex
+            margin-right: 72px
+            a:first-child
+                padding-right: 42px
+            img
+                padding-right: 10px
+        &__tel
+            display: none
+
+
+@media (max-width: 1025px)
+    .footer
+        min-height: 119px
+        padding: 12px 31.5px 33px 15px
+        display: block
+        &__time
+            display: none
+        &__call
+            display: none
+        &__link
+            display: none
+        &__social
+            display: flex
+            justify-content: center
+            margin-right: 0
+            margin-top: 13px
+        &__tel
+            display: block
+            text-align: center
+            a
+                color: #32c220
+                font-size: 16px
+
+
 
