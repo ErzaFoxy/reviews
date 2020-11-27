@@ -1,0 +1,88 @@
+*
+    font-family: 'PT Sans', sans-serif
+    box-sizing: border-box
+    margin: 0
+
+@media (max-width: 2561px)
+    .header
+        margin: 0.75rem 1.5rem
+        display: flex
+        justify-content: space-between
+        &__logo
+            width: 73.71px
+            height: 32px
+        &__tel
+            display: inline-flex
+            align-items: center
+            &-link
+                font-size: 14px
+                font-weight: 400
+                color: #616161
+                text-decoration: none
+                padding-left: 8px
+                &:hover
+                    text-decoration: underline
+
+
+
+@media (max-width: 450px)
+    .header
+        margin: 0.75rem 0
+        display: flex
+        justify-content: center
+        &__logo
+            width: 73.71px
+            height: 32px
+        &__tel
+            display: none
+
+
+.reviews
+    background-color: #f2f2f2
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    &__title
+        font-weight: 400
+        font-size: 40px
+    &__btn
+        img
+            transition: 0.8s all
+            &:hover
+                transform: scale(1.1)
+
+@media (max-width: 2561px)
+    .reviews
+        min-height: 880px
+        &__title
+            margin-bottom: 6rem
+        &__btn
+            a
+                padding: 0 3.3rem
+            img
+                width: 300px
+                height: 300px
+
+@media (max-width: 768px)
+    .reviews
+        min-height: 700px
+        &__btn
+            img
+                width: 200px
+                height: 200px
+
+
+@media (max-width: 450px)
+    .reviews
+        min-height: 561px
+        &__title
+            margin-bottom: 4rem
+            text-align: center
+        &__btn
+            a
+                padding: 0 1.2rem
+            img
+                width: 110px
+                height: 110px
+
