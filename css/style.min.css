@@ -227,6 +227,7 @@
 
 @media (max-width: 1025px) {
     .footer {
+        min-height: 135px;
         padding: 12px 31.5px 33px 15px;
         display: block
     }
